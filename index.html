@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="in">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio - P3YCH</title>
+    <link rel="shortcut icon" href="//p3ych.github.io/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="//p3ych.github.io/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-side-modals.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://p3ych.github.io/css/text-animation/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.min.css" integrity="sha256-9sjPKPDYQR/DJmNyvwjrb45imS33xVjgOS9nLcWvSac=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" integrity="sha512-erXaRvkGGUhkRub+PAH0bd+aBmYjHzEmo4ymIf/AirZNasjJOWj88ts3pL+tIUtQcUFTjZAeLV8Q5Grwf6MkZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css" media="all">
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fira+Sans&family=Ubuntu&family=Patrick+Hand');
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+      ::selection {
+        color: white !important;
+        background: var(--mdb-danger) !important;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Fira Sans', sans-serif;
+      }
+      .typewriter span {
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: .10rem; /* Adjust as needed */
+        animation:
+        typing 5.10s,
+        blink-caret .5s step-end infinite;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: var(--mdb-red) }
+      }
+      @-webkit-keyframes border-transform{0%,100%{border-radius:63% 37% 54% 46% / 55% 48% 52% 45%}14%{border-radius:40% 60% 54% 46% / 49% 60% 40% 51%}28%{border-radius:54% 46% 38% 62% / 49% 70% 30% 51%}42%{border-radius:61% 39% 55% 45% / 61% 38% 62% 39%}56%{border-radius:61% 39% 67% 33% / 70% 50% 50% 30%}70%{border-radius:50% 50% 34% 66% / 56% 68% 32% 44%}84%{border-radius:46% 54% 50% 50% / 35% 61% 39% 65%}}
+      .kym-tTop{position:fixed;right:20px;bottom:75px;height:45px;width:45px;display:block;background:var(--mdb-dark);border-radius:50px;box-shadow:inset 0 0 0 2px rgba(255,255,255,0.2),rgba(0,0,0,0.07) 0 1px 1px,rgba(0,0,0,0.07) 0 2px 2px,rgba(0,0,0,0.07) 0 4px 4px,rgba(0,0,0,0.07) 0 8px 8px,rgba(0,0,0,0.07) 0 16px 16px;z-index:1;opacity:0;visibility:hidden;transform:translateY(15px);-webkit-transition:all 200ms linear;transition:all 200ms linear}
+      .kym-tTop svg.progress-circle{width:100%!important;height:100%!important}
+      .kym-tTop.active-progress{opacity:1;visibility:visible;transform:translateY(0)}
+      .kym-tTop svg.line{position:absolute;text-align:center;line-height:40px;left:10px;top:10px;height:24px;width:24px;display:block;z-index:1;-webkit-transition:all 200ms linear;transition:all 200ms linear}
+      .kym-tTop:hover::before{opacity:1}
+      .kym-tTop svg path{fill:none}
+      .kym-tTop svg.progress-circle path{stroke:var(--mdb-light);stroke-width:4;box-sizing:border-box;-webkit-transition:all 200ms linear;transition:all 200ms linear}
+      
+      /* Notifikasi Cookie by Guntur */ .cookies{position:fixed;top:auto;left:40px;right:auto;margin-bottom:-6px;bottom:-600px;z-index:999999;display:none;padding:20px;background:var(--mdb-body);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:15px;box-shadow:0 0 40px rgba(0,0,0,.1);animation:ckUpD 2.5s forwards;-webkit-animation:ckUpD 2.5s forwards;animation-delay:1s;-webkit-animation-delay:1s;max-width:400px} .cookies.v{display:block} .cookies.a{animation:ckDnD 2.5s backwards;-webkit-animation:ckDnD 2.5s backwards;animation-delay:.3s;-webkit-animation-delay:.3s} .ckH{margin-bottom:10px;font-size:1.1rem;font-weight:700;font-family:var(--fontBa)} .ckH::after{content:'';display:inline-block;vertical-align:middle;width:var(--widgetTa);margin:0 10px;border-bottom:1px solid var(--widgetTac);opacity:.5} .ckD{font-size:14px;line-height:1.4rem;font-family:var(--fontBa)} .ckF{margin-top:15px;display:flex;justify-content:center} .ckF >*{flex-grow:1;justify-content:center} .ckF >*:first-child{margin-right:10px;background:var(--linkB);color:#fffdfc} .ckF >*:last-child{flex:0 0 auto} .ckB{display:inline-flex;align-items:center;cursor:pointer;padding:10px 15px;outline:0;border:0;border-radius:3px;line-height:20px;color:white;background:var(--mdb-dark);font-size:14px;font-family:var(--fontB);white-space:nowrap;overflow:hidden} .ckB:hover{opacity:.8} .Rtl .cookies{left:auto;right:40px} .Rtl .ckF >*:first-child{margin-right:0} .Rtl .ckF >*:last-child{margin-right:10px} @media screen and (max-width:768px){.cookies{left:20px;right:20px;animation:ckUpM 2.5s forwards;-webkit-animation:ckUpM 2.5s forwards} .cookies.a{animation:ckDnM 2.5s backwards;animation-delay:.3s;-webkit-animation:ckDnM 2.5s backwards;-webkit-animation-delay:.3s} .Rtl .cookies{left:20px;right:20px}} @keyframes ckUpD{100%{bottom:40px}} @keyframes ckUpM {100%{bottom:20px}} @keyframes ckDnD{0%{bottom:40px}100%{bottom:-600px}} @keyframes ckDnM{0%{bottom:20px}100%{bottom:-600px}} @-webkit-keyframes ckUpD{100%{bottom:40px}} @-webkit-keyframes ckUpM {100%{bottom:20px}} @-webkit-keyframes ckDnD{0%{bottom:40px}100%{bottom:-600px}} @-webkit-keyframes ckDnM{0%{bottom:20px}100%{bottom:-600px}}}
+      .text-3 {
+        font-family: 'Fira Sans', sans-serif;
+      }
+      .title {
+        font-family: 'Fira Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body id="a4abad9a244bb3ea6639826abcaaa36e">
+    <section title="back-to-top">
+      <!-- back to top -->
+      <div class='kym-tTop' onclick='window.scrollTo({top: 0})'>
+        <svg class='bg-transparent progress-circle svg-content' height='100%' viewBox='-1 -1 102 102' width='100%'>
+          <path d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98' />
+        </svg>
+        <svg class='line' fill='none' stroke='white' viewBox='0 0 24 24'>
+          <g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+            <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0' />
+          </g>
+        </svg>
+      </div>
+    </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-4">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img src="https://p3ych.github.io/img/Rabbit.png" class="me-2" height="36" alt="MDB Logo" loading="lazy" />
+          <small class="mt-1">Blog - Portofolio</small>
+        </div>
+        
+        <div class="d-flex align-items-center">
+          <!-- Settings -->
+          <div class="dropdown dropstart">
+            <a
+              class="text-reset me-2 hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-three-dots-vertical"></i>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" download href="#page-offline"><i class="bi bi-cloud-download me-3"></i>Halaman offline</a>
+                <script type="text/javascript" charset="utf-8">function downloadAll(urls) {var link = document.createElement('a');link.setAttribute('download', null);link.style.display = 'none';document.body.appendChild(link);for (var i = 0; i < urls.length; i++) {link.setAttribute('href', urls[i]);link.click();}document.body.removeChild(link);}</script>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#setting-font"><i class="bi bi-file-earmark-font me-3"></i>Ganti Font</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a class="dropdown-item" href="#out-page" onclick="window.close()"><i class="bi bi-arrow-bar-right me-3"></i>Keluar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#restart-page" onclick="window.location.reload()"><i class="bi bi-arrow-clockwise me-3"></i>Restart</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#back-page" onclick="history.back()"><i class="bi bi-chevron-left me-3"></i>
+                  Kembali
+                </a>
+              </li>
+            </ul>
+          </div>
+            
+          <!-- Share -->
+          <a class="text-reset me-2">
+            <i class="bi bi-moon"></i>
+          </a>
+          
+          <!-- View -->
+          <a class="text-reset me-2">
+            <i class="bi bi-eye fs-5"></i>
+            <span class="badge rounded-pill badge-notification bg-danger count"></span>
+          </a>
+          
+          <!-- Translate -->
+          <div class="dropstart">
+            <div class="d-flex align-items-center hidden-arrow me-2" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"aria-expanded="false">
+              <i class="bi bi-translate"></i>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <div
+                  class="btn-outline btn-group shadow-1"
+                  role="group"
+                  >
+                  <button
+                      type="button"
+                      class="btn btn-body"
+                      data-mdb-toggle="modal" 
+                      data-mdb-target="#staticBackdrop"
+                      >
+                      <i
+                        class="bi bi-box-arrow-in-right fs-5"
+                        ></i>
+                        Login
+                    </button>
+                    <small
+                      class="mt-2 fs-2"
+                      >
+                      |</small>
+                    <button
+                      type="button"
+                      class="btn btn-body"
+                      >
+                      <i
+                        class="bi bi-box-arrow-in-left fs-5"
+                        ></i>
+                        Daftar
+                    </button>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Profile -->
+          <div class="dropdown">
+            <div class="d-flex align-items-center hidden-arrow" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"aria-expanded="false">
+                <i class="bi bi-person fs-5"></i>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                <li>
+                  <div
+                    class="btn-outline btn-group shadow-1"
+                    role="group"
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-body"
+                      data-mdb-toggle="modal" 
+                      data-mdb-target="#staticBackdrop"
+                      >
+                      <i
+                        class="bi bi-box-arrow-in-right fs-5"
+                        ></i>
+                        Login
+                    </button>
+                    <small
+                      class="mt-2 fs-2"
+                      >
+                      |</small>
+                    <button
+                      type="button"
+                      class="btn btn-body"
+                      >
+                      <i
+                        class="bi bi-box-arrow-in-left fs-5"
+                        ></i>
+                        Daftar
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="modal modal-left fade" id="left_modal_sm" tabindex="-1" role="dialog" aria-labelledby="left_modal_sm">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content" style="-webkit-border-top-right-radius: 50px;-webkit-border-bottom-right-radius: 50px;">
+          <div class="modal-header">
+            <h5 class="modal-title"><script type="text/javascript" charset="utf-8">
+              var h=(new Date()).getHours();
+              var m=(new Date()).getMinutes();
+              var s=(new Date()).getSeconds();
+              if (h >= 4 && h < 10) document.writeln("Selamat pagi");
+              if (h >= 10 && h < 15) document.writeln("Selamat siang");
+              if (h >= 15 && h < 18) document.writeln("Selamat sore");
+              if (h >= 18 || h < 4) document.writeln("Selamat malam");
+            </script></h5>
+            <i class="bi bi-x fs-4 mr-3" data-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <div class="modal-body mb-0">
+            
+          </div>
+          <div class="modal-footer modal-footer-fixed-bottom">
+            <p>Copyrigh By P3YCH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Search -->
+    <div class="modal modal-top fade" id="top_modal" tabindex="-1" role="dialog" aria-labelledby="top_modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="-webkit-border-bottom-left-radius: 15px;-webkit-border-bottom-right-radius: 15px;">
+          <div class="modal-body">
+            <div class="form-outline border-0">
+              <i class="bi bi-search trailing"></i>
+              <input type="text" id="form16 formControlLg" class="form-control mr-sm-2 mb-0" data-mdb-showcounter="true" maxlength="10" />
+              <label class="form-label" for="form16">Search what bro?</label>
+              <div class="form-helper"></div>
+              <div class="mb-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    
+    <!-- Modal Share -->
+    <div class="modal modal-bottom fade" id="bottom_modal" tabindex="-1" role="dialog" aria-labelledby="bottom_modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="-webkit-border-top-left-radius: 15px;-webkit-border-top-right-radius: 15px;">
+          <div class="modal-header border-0" style="user-select:none">
+            <h5 class="modal-title" style="font-size:medium">Bagikan ke aplikasi lainnya</h5>
+            <i class="bi bi-x fs-3" data-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <div class="modal-body container">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-lg btn-primary btn-floating bi bi-facebook fs-5"></button>
+                <button type="button" class="btn btn-primary bi bi-facebook fs-5"></button>
+                <button type="button" class="btn btn-primary bi bi-facebook fs-5"></button>
+                <button type="button" class="btn btn-primary bi bi-facebook fs-5"></button>
+              </div>
+            </div>
+            <br />
+            <span style="user-select:none">or copy link</span>
+            <br />
+            <div class="input-group">
+              <input type="text" id="formControlReadonly" class="form-control bg-light border-0 text-muted rounded copy-text" readonly />
+              &nbsp;<span class="btn btn-primary input-group-text border-0 copy-content" id="basic-addon2"><i class="bi bi-clipboard me-2"></i>Copy</span>
+            </div>
+            <script type="text/javascript" charset="utf-8">
+            document.getElementById("formControlReadonly").value = window.location.origin + window.location.pathname;
+            var copyTextareaBtn = document.querySelector('.copy-content');
+            
+            copyTextareaBtn.addEventListener('click', function(event) {
+              var copyTextarea = document.querySelector('.copy-text');
+              copyTextarea.focus();
+              copyTextarea.select();
+              try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                const Toast = Swal.mixin({
+                  toast: true,
+                  position: 'top-end',
+                  showConfirmButton: false,
+                  timer: 900,
+                  timerProgressBar: true,
+                  didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                  }
+                })
+                Toast.fire({
+                  icon: 'success',
+                  title: 'Copy successfully'
+                })
+                console.log('Copy ' + msg);
+              } catch (err) {
+                alert ("Copy unsuccessful")
+                console.log('Oops, unable to copy');
+              }
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Login and Sig-up -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-mdb-backdrop="static"
+      data-mdb-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content container">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Silakan Login</h5>
+          </div>
+          <div class="modal-body">
+            <div class="form-outline mb-3">
+              <i class="bi bi-mailbox trailing"></i>
+              <input type="email" id="formControlDefault" class="form-control form-icon-trailing" />
+              <label class="form-label" for="form1">Email</label>
+            </div>
+            <div class="form-outline">
+              <i class="bi bi-key trailing"></i>
+              <input type="password" id="formControlDefault" class="form-control form-icon-trailing" />
+              <label class="form-label" for="form1">Password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-body text-light" data-mdb-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-body text-light">Simpan Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Jumbotron -->
+    <section class="container p-3 mt-5 bg-body">
+      <div class="card shadow-0">
+        <div class="card-body">
+          <div class="text-center">
+            <img class="img-fluid w-75" src="//p3ych.github.io/img/dewa.png" alt="" />
+            <br />
+            <button class="btn btn-md btn-rounded-none mt-2 shadow-3-strong">
+              <a class="text-reset" href="#a4abad9a244bb3ea6639826abcaaa36e">Home</a>
+            </button>
+            <button class="btn btn-md btn-rounded-none mt-2 shadow-3-strong">
+              <a class="text-reset" href="#fd7e471d9e5696ea083f10720f169311">About</a>
+            </button>
+            <br />
+            <button class="btn btn-md btn-rounded-none mt-2 shadow-3-strong">
+              <a class="text-reset" href="/">Blog</a>
+            </button>
+            <button class="btn btn-md btn-rounded-none mt-2 shadow-3-strong">
+              <a class="text-reset" href="#b122dc38c899c676f39888ceb6fd1089">Project</a>
+            </button>
+            <button class="btn btn-md btn-rounded-none mt-2 shadow-3-strong">
+              <a class="text-reset" href="#65e84f4e55313aef8aa986ccff3e778b">Contact</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Me -->
+    <article id="fd7e471d9e5696ea083f10720f169311" class="container p-3 mt-5">
+      <div class="card shadow-0">
+        <div class="card-body">
+          <div class="text-center">
+            <h1 class="display-5">
+              <strong>About Me</strong>
+            </h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure mollitia voluptatum corrupti sint delectus facilis pariatur recusandae! Eveniet, iure debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quibusdam animi odit unde sequi voluptatibus quo rem perferendis eos, numquam in porro cumque a hic!
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Project Me -->
+    <article id="b122dc38c899c676f39888ceb6fd1089" class="container p-3">
+      <div class="card shadow-0">
+        <div class="card-body">
+          <div class="text-center">            <h1 class="display-5">
+              <strong>Project Me</strong>
+            </h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure mollitia voluptatum corrupti sint delectus facilis pariatur recusandae! Eveniet, iure debitis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quibusdam animi odit unde sequi voluptatibus quo rem perferendis eos, numquam in porro cumque a hic!
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Contact Me -->
+    <article id="65e84f4e55313aef8aa986ccff3e778b" class="container p-3">
+      <div class="card shadow-0">
+        <div class="card-body">
+          <div class="text-center">       
+            <h1 class="display-5">
+              <strong>Contact Me</strong>
+            </h1>
+            <form>
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <input type="text" id="form4Example1" class="form-control" />
+    <label class="form-label" for="form4Example1">Name</label>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="form4Example2" class="form-control" />
+    <label class="form-label" for="form4Example2">Email address</label>
+  </div>
+
+  <!-- Message input -->
+  <div class="form-outline mb-4">
+    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+    <label class="form-label" for="form4Example3">Message</label>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+    <label class="form-check-label" for="form4Example4">
+      Send me a copy of this message
+    </label>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+</form>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    <br />
+    <br />
+    <!-- Notification Cookies -->
+    <div class='cookies' id='guntur'>
+      <div class='ckA'>
+        <div class='ckH'>Cookie Consent</div>
+        <div class='ckD'>We serve cookies on this site to analyze traffic, remember your preferences, and optimize your experience.</div>
+      </div>
+      <div class='ckF'>
+        <button class='ckB text-dark' id='ckAccept'>Accept</button>
+        <a class='ckB text-light' href='/p/cookies.html'>More Details</a>
+      </div>
+    </div>
+    
+    <!-- Navbar Bottom -->
+    <nav class="navbar navbar-expand navbar-light bg-white fixed-bottom p-2 shadow-2-strong" style="-webkit-border-top-left-radius: 40px;-webkit-border-top-right-radius: 40px;">
+      <ul class="navbar-nav nav-justified w-100 mr-2">
+        <li class="nav-item">
+          <a href="/" class="nav-link text-center">
+            <i class="bi bi-house fs-4" data-toggle="modal" data-target="#top_modal"></i>
+            <!-- <span class="small d-block">Home</span> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#open-search" class="nav-link text-center">
+            <i class="bi bi-search fs-4" data-toggle="modal" data-target="#top_modal"></i>
+            <!-- <span class="small d-block">Search</span> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#open-menu" class="nav-link text-center">
+            <i class="bi bi-grid fs-4" data-toggle="modal" data-target="#left_modal_sm"></i>
+            <!--<span class="small d-block">Menu</span> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#open-comment" class="nav-link text-center">
+            <i class="bi bi-chat-square-dots fs-4"></i>
+            <!-- <span class="small d-block">Comment</span> -->
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="modal" data-target="#bottom_modal">
+          <a href="#open-share" class="nav-link text-center">
+            <i class="bi bi-box-arrow-up fs-4"></i>
+            <!-- <span class="small d-block">Share</span> -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+       
+    <div id='ckError'/>
+    <script>/*<![CDATA[*/ /* JS Cookie by Guntur */ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('N d=["\\l\\c\\k\\m","\\D\\E\\t\\n\\h\\t\\i","\\X\\t\\b\\i\\u\\Y\\b\\l\\b\\f\\h\\c\\i","\\D\\f\\o\\F\\f\\f\\b\\r\\h","\\D\\f\\o\\G\\i\\i\\c\\i","\\z\\g\\n\\r\\t\\h\\e\\f\\l\\k\\j\\j\\q\\p\\n\\O\\j\\e\\s\\g\\m\\m\\b\\n\\p\\e\\g\\m\\q\\p\\w\\c\\i\\v\\o\\G\\i\\i\\p\\e\\h\\u\\r\\b\\q\\p\\f\\s\\b\\f\\o\\x\\c\\H\\p\\I\\A\\z\\m\\g\\B\\e\\f\\l\\k\\j\\j\\q\\p\\n\\c\\O\\j\\p\\e\\m\\k\\h\\k\\P\\h\\b\\H\\h\\q\\p\\v\\c\\c\\o\\g\\b\\e\\f\\k\\n\\Z\\D\\1a\\1b\\1c\\J\\h\\e\\x\\b\\e\\j\\b\\h\\1d\\e\\C\\l\\b\\k\\j\\b\\e\\t\\n\\x\\l\\c\\f\\o\\e\\h\\s\\g\\j\\e\\j\\g\\h\\b\\e\\w\\i\\c\\K\\e\\h\\s\\b\\e\\f\\c\\c\\o\\g\\b\\e\\j\\b\\h\\h\\g\\n\\E\\e\\c\\w\\e\\u\\c\\t\\i\\e\\x\\i\\c\\1e\\j\\b\\i\\1f\\p\\A\\z\\l\\k\\x\\b\\l\\e\\w\\c\\i\\q\\p\\w\\c\\i\\v\\o\\G\\i\\i\\p\\A\\z\\I\\l\\k\\x\\b\\l\\A\\z\\I\\m\\g\\B\\A","\\B","\\k\\m\\m","\\f\\l\\k\\j\\j\\L\\g\\j\\h","\\c\\n\\f\\l\\g\\f\\o","\\f\\c\\c\\o\\g\\b","\\v\\c\\c\\o\\g\\b\\C\\c\\l\\g\\f\\u\\q\\F\\f\\f\\b\\r\\h\\b\\m\\J\\K\\k\\H\\P\\k\\E\\b\\q","\\J\\r\\k\\h\\s\\q\\I","\\Q\\s\\b\\e\\t\\j\\b\\i\\e\\s\\k\\j\\e\\k\\f\\f\\b\\r\\h\\b\\m\\e\\h\\s\\b\\e\\v\\c\\c\\o\\g\\b\\e\\C\\c\\l\\g\\f\\u","\\l\\c\\E","\\k","\\g\\n\\n\\b\\i\\1g\\Q\\1h\\L","\\v\\c\\c\\o\\g\\b\\C\\c\\l\\g\\f\\u\\q\\F\\f\\f\\b\\r\\h\\b\\m","\\g\\n\\m\\b\\H\\1i\\w","\\v\\c\\c\\o\\g\\b\\e\\C\\c\\l\\g\\f\\u\\e\\g\\j\\e\\F\\f\\f\\b\\r\\h\\b\\m","\\i\\b\\K\\c\\B\\b","\\k\\m\\m\\G\\B\\b\\n\\h\\L\\g\\j\\h\\b\\n\\b\\i"];1j[d[1k]](d[0],1l(){N a=y[d[2]](d[1]),R=y[d[2]](d[3]),S=y[d[2]](d[4]),T=d[5];M(a!=1m){a[d[8]][d[7]](d[6]);R[d[9]]=()=>{y[d[10]]=d[11]+U*U*1n*1o+d[12];M(y[d[10]]){V[d[14]](d[13]);a[d[8]][d[7]](d[15])}1p{S[d[16]]=T}};1q W=y[d[10]][d[18]](d[17]);M(W!=-1){V[d[14]](d[19]);a[d[8]][d[1r]](d[6])}}})',62,90,'|||||||||||x65|x6F|_0xcd64|x20|x63|x69|x74|x72|x73|x61|x6C|x64|x6E|x6B|x27|x3D|x70|x68|x75|x79|x43|x66|x62|document|x3C|x3E|x76|x50|x23|x67|x41|x45|x78|x2F|x3B|x6D|x4C|if|var|x4A|x2D|x54|_0x3662x2|_0x3662x3|_0x3662x4|60|console|_0x3662x5|x71|x53|x26|||||||||||x30|x33|x39|x21|x77|x2E|x48|x4D|x4F|window|21|function|null|24|30|else|let|20'.split('|'),0,{})) /*]]>
+    */</script>
+    <script type="text/javascript" charset="utf-8">
+      function updateCounter() {
+        fetch('https://api.countapi.xyz/update/portofolio/p3ychcount/?amount=1')
+        .then(res => res.json())
+        .then(data => counterElement.innerHTML = data.value)
+      }
+      
+      updateCounter()
+      
+      counterElement = document.getElementsByClassName('count')[0];
+    </script>
+    <script type="text/javascript">
+    //<![CDATA[
+      document.addEventListener("contextmenu",function(e){"IMG"===e.target.nodeName&&e.preventDefault()},!1);
+    //]]></script>
+    <script>/*<![CDATA[*/
+    /* Backtotop KuyMase */
+    eval(function(k,u,y,m,a,se){a=function(y){return(y<u?'':a(parseInt(y/u)))+((y=y%u)>35?String.fromCharCode(y+29):y.toString(36))};if(!''.replace(/^/,String)){while(y--)se[a(y)]=m[y]||a(y);m=[function(a){return se[a]}];a=function(){return'\\w+'};y=1};while(y--)if(m[y])k=k.replace(new RegExp('\\b'+a(y)+'\\b','g'),m[y]);return k}('0.6("m",(7(){3 e=0.8(\'.9-a p\'),t=e.q();e.1.b=e.1.c="r",e.1.u=t+" "+t,e.1.d=t,e.v(),e.1.b=e.1.c="w-x y z";3 o=7(){3 o=0.2.4||0.5.4,n=A.B(0.5.f,0.5.g,0.2.C,0.2.f,0.2.g)-h.D,s=t-o*t/n;e.1.d=s};o(),0.6("i",o);h.6("i",(7(){3 e=0.2.4||0.5.4,t=0.8(\'.9-a\');e>=E?t.j.F(\'k-l\'):t.j.G(\'k-l\')}))}))',43,43,'document|style|documentElement|var|scrollTop|body|addEventListener|function|querySelector|kym|tTop|transition|WebkitTransition|strokeDashoffset||scrollHeight|offsetHeight|window|scroll|classList|active|progress|DOMContentLoaded|||path|getTotalLength|none|||strokeDasharray|getBoundingClientRect|stroke|dashoffset|10ms|linear|Math|max|clientHeight|innerHeight|50|add|remove'.split('|'),0,{}));
+    /*]]>*/</script>
+    <script type='text/javascript'>
+    //<![CDATA[
+    // Lazy Load
+    (function(a){a.fn.lazyload=function(b){var c={threshold:0,failurelimit:0,event:"scroll",effect:"show",container:window};if(b){a.extend(c,b)}var d=this;if("scroll"==c.event){a(c.container).bind("scroll",function(b){var e=0;d.each(function(){if(a.abovethetop(this,c)||a.leftofbegin(this,c)){}else if(!a.belowthefold(this,c)&&!a.rightoffold(this,c)){a(this).trigger("appear")}else{if(e++>c.failurelimit){return false}}});var f=a.grep(d,function(a){return!a.loaded});d=a(f)})}this.each(function(){var b=this;if(undefined==a(b).attr("original")){a(b).attr("original",a(b).attr("src"))}if("scroll"!=c.event||undefined==a(b).attr("src")||c.placeholder==a(b).attr("src")||a.abovethetop(b,c)||a.leftofbegin(b,c)||a.belowthefold(b,c)||a.rightoffold(b,c)){if(c.placeholder){a(b).attr("src",c.placeholder)}else{a(b).removeAttr("src")}b.loaded=false}else{b.loaded=true}a(b).one("appear",function(){if(!this.loaded){a("<img />").bind("load",function(){a(b).hide().attr("src",a(b).attr("original"))[c.effect](c.effectspeed);b.loaded=true}).attr("src",a(b).attr("original"))}});if("scroll"!=c.event){a(b).bind(c.event,function(c){if(!b.loaded){a(b).trigger("appear")}})}});a(c.container).trigger(c.event);return this};a.belowthefold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).height()+a(window).scrollTop()}else{var d=a(c.container).offset().top+a(c.container).height()}return d<=a(b).offset().top-c.threshold};a.rightoffold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).width()+a(window).scrollLeft()}else{var d=a(c.container).offset().left+a(c.container).width()}return d<=a(b).offset().left-c.threshold};a.abovethetop=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollTop()}else{var d=a(c.container).offset().top}return d>=a(b).offset().top+c.threshold+a(b).height()};a.leftofbegin=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollLeft()}else{var d=a(c.container).offset().left}return d>=a(b).offset().left+c.threshold+a(b).width()};a.extend(a.expr[":"],{"below-the-fold":"$.belowthefold(a, {threshold : 0, container: window})","above-the-fold":"!$.belowthefold(a, {threshold : 0, container: window})","right-of-fold":"$.rightoffold(a, {threshold : 0, container: window})","left-of-fold":"!$.rightoffold(a, {threshold : 0, container: window})"})})(jQuery);$(function(){$("img").lazyload({placeholder:"",effect:"fadeIn",threshold:"-50"})});
+    //]]>
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      cookieChoices = {};
+    </script>
+    <script async src="https://api.countapi.xyz/hit/p3ych.github.io/visits?callback=cb"></script>
+    <script src="//p3ych.github.io/js/copying.jss" type="text/javascript" charset="utf-8"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/block-country.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js" integrity="sha256-2ggjRmgqsapGWqWn+gFMjW3R/RGAlq/iuVdgszJdUzA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js" integrity="sha512-JLkwaZ4wv4rmL3O3OoWF1ODQonz8mJgOwA3MxH6nLZTNgHbelnzk1xnsY74Ri+WWW1ZNaqHfg0KBQyMmi5vtbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
